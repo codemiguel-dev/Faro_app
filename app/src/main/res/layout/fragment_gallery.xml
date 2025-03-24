@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.perfiles.PerfilesFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="30dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <!--Texto en la parte superior-->
+            <TextView
+                android:id="@+id/tutorialText"
+                android:layout_width="323dp"
+                android:layout_height="217dp"
+                android:layout_gravity="center"
+                android:fontFamily="@font/timesnewroman"
+                android:paddingTop="20dp"
+                android:text="Usted podrá realizar búsquedas de los usuarios registrados en esta aplicación. Presione el botón rojo para buscar perfiles."
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+
+            <!-- Flechas de "Atrás" y "Siguiente" en la parte inferior -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="197dp"
+                    android:layout_height="300dp"
+                    android:layout_marginEnd="7dp"
+                    android:src="@drawable/mujermalabarista"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <!-- Botón debajo de la imagen y centrado -->
+                <Button
+                    android:id="@+id/btnlistuser"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="30dp"
+                    android:backgroundTint="@color/red"
+                    android:fontFamily="@font/timesnewroman"
+                    android:text="Búsqueda"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

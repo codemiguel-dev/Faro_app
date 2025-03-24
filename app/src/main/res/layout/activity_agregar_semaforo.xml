@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AgregarSemaforo">
+
+    <RelativeLayout
+        android:id="@+id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <ImageButton
+            android:id="@+id/backBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@android:color/transparent"
+            android:padding="5dp"
+            android:src="@drawable/ico_back_dark" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:fontFamily="@font/timesnewroman"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:text="Suba el semáforo"
+            android:textSize="34sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/toolBar2"
+        android:layout_width="match_parent"
+        android:layout_height="635dp"
+        android:layout_below="@+id/toolBar">
+
+        <EditText
+            android:id="@+id/txtlatitud"
+            android:fontFamily="@font/timesnewroman"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:hint="Presione Mostrar Coordenada"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/txtlongitud"
+            android:fontFamily="@font/timesnewroman"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Presione Mostrar Coordenada"
+            android:layout_below="@+id/txtlatitud"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/txtdetalle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/timesnewroman"
+            android:layout_below="@+id/txtlongitud"
+            android:hint="Ejemplo: duración de 3 minutos con tres carriles"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/btnIngresarSemaforo"
+            android:fontFamily="@font/timesnewroman"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/yellow"
+            android:layout_below="@+id/txtdetalle"
+            android:textColor="@color/white"
+            android:text="Subir Semáforo" />
+
+        <Button
+            android:id="@+id/MostrarCoordenada"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/timesnewroman"
+            android:backgroundTint="@color/green"
+            android:textColor="@color/white"
+            android:layout_below="@+id/btnIngresarSemaforo"
+            android:text="Mostrar Coordenada" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:fontFamily="@font/timesnewroman"
+            android:layout_height="112dp"
+            android:layout_below="@+id/MostrarCoordenada"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:text="Nota: presione varias veces el botón Mostrar Coordenada para mayor precisión de latitud y longitud."
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

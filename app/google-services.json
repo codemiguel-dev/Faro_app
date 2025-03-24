@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "170380447596",
+    "project_id": "faro-app-2768d",
+    "storage_bucket": "faro-app-2768d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:170380447596:android:67bbafc0158c6092d82d49",
+        "android_client_info": {
+          "package_name": "com.pack.faro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "170380447596-e7ip3pl9tff59mmlvlvfibjq4o3crufi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAPQvsZCNut-fLLA2C7utdK_ozbi5q5y54"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "170380447596-e7ip3pl9tff59mmlvlvfibjq4o3crufi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
